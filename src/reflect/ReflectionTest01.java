@@ -1,6 +1,5 @@
-package reflct;
+package reflect;
 
-import java.io.IOException;
 import java.io.InputStream;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Method;
@@ -10,7 +9,7 @@ import java.util.Properties;
  * 框架類
  */
 
-public class ReflctionTest01 {
+public class ReflectionTest01 {
 
     public static void main(String[] args) throws Exception{
         //如果要把它當成框架,他不能改變裡面的任何code,也能創造任意對象的類,可以執行任意方法
@@ -20,7 +19,7 @@ public class ReflctionTest01 {
         //獲取配置文件
 
         //讓ReflctionTest01.class 加載類加載器
-        ClassLoader classLoader =  ReflctionTest01.class.getClassLoader();
+        ClassLoader classLoader =  ReflectionTest01.class.getClassLoader();
 
         //ClassLoader(類加載器)可以獲得整個src內所得的文件,這裡獲得配置文件
         InputStream inputStream =
